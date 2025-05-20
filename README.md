@@ -13,6 +13,7 @@
 
 - cd client
 - npm install
+- Copy `.env.example` to `.env` and fill in values.
 - npm run dev
 
 ## Endpoints
