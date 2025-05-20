@@ -1,0 +1,202 @@
+.wrapper {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  width: 100vw;
+  font-family: sans-serif;
+}
+
+/* Header */
+.header {
+  background: #ececec;
+  padding: 16px 24px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.header-nav {
+  background: #ddd;
+  padding: 16px 24px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Main content area: question / sidebar */
+.main {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* Left panel */
+.left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  width: 75%;
+  border-right: 1px solid #ddd;
+}
+
+.question-area {
+  flex: 3;
+  padding: 24px;
+  overflow-y: auto;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.options-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Right sidebar */
+.sidebar {
+  flex: 1;
+  background: #f9f9f9;
+  overflow-y: auto;
+}
+
+.timer {
+  padding: 24px;
+}
+
+.time-blocks {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.time-block {
+  background: #f9f9f9;
+  padding: 8px 12px;
+  border-radius: 4px;
+  min-width: 60px;
+}
+
+.time-value {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #000;
+}
+
+.time-label {
+  font-size: 0.75rem;
+  color: #666;
+  text-transform: uppercase;
+  margin-top: 4px;
+  line-height: 1;
+}
+
+.sidebar {
+  text-align: center;
+}
+
+.sidebar h3 {
+  margin-top: 24px;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #555;
+}
+
+/* Footer controls */
+.footer {
+  border-top: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.line-break {
+  width: 100%;
+  height: 1px;
+  border-top: 1px solid #ddd;
+}
+
+.question-next-prev-btn {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 24px;
+  width: 96%;
+}
+
+.next-prev-btn {
+  display: flex;
+  gap: 24px;
+}
+
+button:disabled {
+  background-color: #ddd;
+}
+
+/* Buttons */
+.btn {
+  width: 120px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-prev {
+  width: 120px;
+  background: #007bff;
+  color: white;
+}
+.btn-next {
+  width: 120px;
+  background: #007bff;
+  color: white;
+}
+.btn-submit {
+  background: #28a745;
+  color: white;
+}
+
+/* Legend */
+.legend {
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 12px;
+  font-size: 0.875rem;
+  width: 96%;
+}
+.legend span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.legend .box {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  border-radius: 2px;
+}
+.legend .current {
+  background: #007bff;
+}
+.legend .not-visited {
+  background: Red;
+}
+.legend .answered {
+  background: #28a745;
+}
+.legend .not-answered {
+  background: #ffc107;
+}
+
+.thank-you {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}

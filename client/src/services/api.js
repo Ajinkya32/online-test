@@ -1,0 +1,10 @@
+import axios from "axios";
+const API = axios.create({ baseURL: "http://localhost:5000/api" });
+
+export const fetchQuestions = () => API.get("/questions");
+
+export const submitResponses = (payload) => API.post("/responses", payload);
+
+export const fetchScores = () => API.get("/admin/scores");
+
+export const checkSubmission = (userId) => API.get(`/responses/${userId}`);
